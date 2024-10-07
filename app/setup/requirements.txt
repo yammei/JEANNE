@@ -1,0 +1,5 @@
+matplotlib
+numpy
+pyautogui
+opencv-python
+json5

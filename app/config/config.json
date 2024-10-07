@@ -1,0 +1,10 @@
+{
+    "analyze": {
+        "target_img_path": "../images/EasyApply.png",
+        "coord_logs_path": "../config/coordinate_log.csv",
+        "optimize_region": null,
+        "mouse_following": true,
+        "limit_optimizer": 20,
+        "match_threshold": 0.75
+    }
+}
