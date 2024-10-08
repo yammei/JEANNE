@@ -2,4 +2,7 @@
 .env
 __pycache__
 coordinate_log.csv
-./app/scripts/*.png
+.DS_Store
+app/logs/*.png
+app/images/*.png
+app/scripts/*.png

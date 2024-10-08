@@ -102,6 +102,13 @@ class Log:
 
         return optimized_coordinates, coord_pair
 
+    def encapsulate(self, match_coords):
+        x_min = min([coord[0][0] for coord in match_coords])  # Minimum x1 (top-left)
+        y_min = min([coord[0][1] for coord in match_coords])  # Minimum y1 (top-left)
+        x_max = max([coord[1][0] for coord in match_coords])  # Maximum x2 (bottom-right)
+        y_max = max([coord[1][1] for coord in match_coords])  # Maximum y2 (bottom-right)
+        return (x_min, y_min), (x_max, y_max)
+
 
     def visualize(self, coord_pair, avg_coords, screen_width: int=1920, screen_height: int=1080):
         fig, ax = plt.subplots(figsize=(10, 6))
